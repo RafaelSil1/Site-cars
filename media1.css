@@ -1,0 +1,326 @@
+@media (max-width: 320px) {
+
+    header {
+        justify-content: center;
+    }
+
+    .menu-btn {
+        display: flex;
+        /*tornando o menuHamburger Visível*/
+        margin-right: -3rem;
+        /*posicionamento do menu*/
+    }
+
+    /* MENU VERTICAL */
+    .nav-menu {
+        position: absolute;
+        top: -30rem;
+        /* começa escondido acima */
+        left: -2rem;
+        /*ajustando o alinhamento do menu*/
+        width: 100%;
+        /*largura total da caixa do menu*/
+        height: 30vh;
+        /*altura da caixa do menu*/
+        background-color: #000000;
+        transition: top 0.3s ease-in-out;
+        /* transição suave */
+        display: flex;
+        /*alinhamento dos itens*/
+        justify-content: center;
+        /*alinhamento horizontal*/
+        align-items: center;
+        /*alinhamento vertical*/
+    }
+
+    .show {
+        /*essa class será usada pelo JavaScript para ação do menu*/
+        top: 150px;
+        /* desce suavemente quando é ativado */
+        left: -2rem;
+        /*posicionamento do menu*/
+    }
+
+    .ul-list2 {
+        flex-direction: column;
+        gap: 10px;
+        padding: 1rem 0;
+    }
+
+    .img-header img {
+        width: 50%;
+    }
+
+    .img-banner img {
+        margin-left: 0px;
+        width: 100%;
+        height: 25rem;
+    }
+
+    .menu-desktop {
+        display: none;
+    }
+
+    .btn button {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        z-index: 999;
+    }
+
+    .btn img {
+        margin-left: 0px;
+    }
+
+    .title-one {
+        padding: 0px;
+        margin-left: 0px;
+        width: 90%;
+    }
+
+    .title-one h2 {
+        margin-top: 50px;
+        margin-bottom: 40px;
+        margin-left: 50px;
+        font-size: 1.5rem;
+    }
+
+    .cx-img {
+        margin-top: 0px;
+        margin-left: 30px;
+        padding-bottom: 0px;
+        flex-direction: column;
+    }
+
+    .cxs img {
+        margin-left: 20px;
+        width: 85%;
+    }
+
+    .cxs img:hover {
+        transform: none;
+    }
+
+    .crd {
+        flex-direction: column;
+        margin-left: 50px;
+    }
+
+    .title-two {
+        padding: 0px;
+        margin-top: 50px;
+        margin-bottom: 40px;
+        margin-left: 35px;
+        width: 90%;
+    }
+
+    .tx {
+        flex-direction: column;
+        margin-left: 50px;
+    }
+
+    .conteu {
+        flex-direction: column;
+    }
+
+    .conteu2 {
+        flex-direction: column-reverse;
+    }
+
+    .ban {
+        padding: 8rem;
+    }
+
+    .info-wrapper {
+        flex-direction: column;
+    }
+
+    .info-card {
+        width: 300px;
+        padding: 0px;
+    }
+
+    .horario ul,
+    li {
+        padding: 0px;
+        gap: 5px;
+    }
+
+    iframe {
+        width: 300px;
+        height: 300px;
+    }
+
+    .footer-head {
+        flex-direction: column;
+    }
+
+    .footer-columns {
+        flex-wrap: wrap;
+    }
+}
+
+
+@media (max-width: 428px) {
+
+    header {
+        justify-content: space-between;
+    }
+
+
+    .menu-btn {
+        display: flex;
+        /*tornando o menuHamburger Visível*/
+        margin-left: -2rem;
+        /*posicionamento do menu*/
+    }
+
+    /* MENU VERTICAL */
+    .nav-menu {
+        position: absolute;
+        top: -30rem;
+        /* começa escondido acima */
+        left: -2rem;
+        /*ajustando o alinhamento do menu*/
+        width: 100%;
+        /*largura total da caixa do menu*/
+        height: 50vh;
+        /*altura da caixa do menu*/
+        background-color: #818080;
+        transition: top 0.3s ease-in-out;
+        /* transição suave */
+        display: flex;
+        /*alinhamento dos itens*/
+        justify-content: center;
+        /*alinhamento horizontal*/
+        align-items: center;
+        /*alinhamento vertical*/
+    }
+
+    .show {
+        /*essa class será usada pelo JavaScript para ação do menu*/
+        top: 90px;
+        /* desce suavemente quando é ativado */
+        left: 0rem;
+        /*posicionamento do menu*/
+    }
+
+    .ul-list2 {
+        flex-direction: column;
+        gap: 10px;
+        padding: 1rem 0;
+    }
+
+
+    .img-header img {
+        width: 50%;
+    }
+
+    .img-banner img {
+        margin-left: 0px;
+        width: 100%;
+        height: 25rem;
+    }
+
+    .menu-desktop {
+        display: none;
+    }
+
+    .btn button {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        z-index: 999;
+    }
+
+    .btn img {
+        margin-left: 0px;
+    }
+
+    .title-one {
+        padding: 0px;
+        margin-left: 0px;
+        width: 90%;
+    }
+
+    .title-one h2 {
+        margin-top: 50px;
+        margin-bottom: 40px;
+        margin-left: 95px;
+        font-size: 1.5rem;
+    }
+
+    .cx-img {
+        margin-top: 0px;
+        margin-left: 30px;
+        padding-bottom: 0px;
+        flex-direction: column;
+    }
+
+    .cxs img {
+        margin-left: 20px;
+        width: 85%;
+    }
+
+    .cxs img:hover {
+        transform: none;
+    }
+
+    .crd {
+        flex-direction: column;
+        margin-left: 95px;
+    }
+
+    .title-two {
+        padding: 0px;
+        margin-top: 50px;
+        margin-bottom: 40px;
+        margin-left: 95px;
+        width: 90%;
+    }
+
+    .tx {
+        flex-direction: column;
+        margin-left: 95px;
+    }
+
+    .conteu {
+        flex-direction: column;
+    }
+
+    .conteu2 {
+        flex-direction: column-reverse;
+    }
+
+    .ban {
+        padding: 8rem;
+    }
+
+    .info-wrapper {
+        flex-direction: column;
+    }
+
+    .info-card {
+        width: 300px;
+        padding: 0px;
+    }
+
+    .horario ul,
+    li {
+        padding: 0px;
+        gap: 5px;
+    }
+
+    iframe {
+        width: 300px;
+        height: 300px;
+    }
+
+    .footer-head {
+        flex-direction: column;
+    }
+
+    .footer-columns {
+        flex-wrap: wrap;
+    }
+}

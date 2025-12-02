@@ -8,6 +8,7 @@
     <script src="https://kit.fontawesome.com/5729e0ff2e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media1.css">
     <title>Cars</title>
 </head>
 
@@ -23,7 +24,7 @@
 
         <div class="navegador">
 
-            <nav>
+            <nav class="menu-desktop">
 
                 <ul>
                     <li><a href="#">Carros usados</a></li>
@@ -38,6 +39,27 @@
 
                 </ul>
 
+            </nav>
+
+            <!-- botão do menu hamburguer -->
+            <div class="menu-btn" id="menu-btn">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </div>
+
+            <!-- menu mobile -->
+            <nav class="nav-menu" id="navMenu">
+
+                <ul class="ul-list2">
+                    
+                    <li><a href="#">Carros usados</a></li>
+                    <li><a href="#">Leilões</a></li>
+                    <li><a href="#">Carros novos</a></li>
+                    <li><a href="#">Vender carros</a></li>
+                    <li><a href="#">Suporte</a></li>
+
+                </ul>
             </nav>
 
 
@@ -259,64 +281,68 @@
 
             <div class="info-card map">
 
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58528.30945515664!2d-46.812067689101255!3d-23.53180676662808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce576359b099a9%3A0x5e0bb2841f954608!2sStern%20import!5e0!3m2!1spt-BR!2sbr!4v1764688646350!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58528.30945515664!2d-46.812067689101255!3d-23.53180676662808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce576359b099a9%3A0x5e0bb2841f954608!2sStern%20import!5e0!3m2!1spt-BR!2sbr!4v1764688646350!5m2!1spt-BR!2sbr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
 
             </div>
         </section>
-        
+
     </main>
 
     <!-- FOOTER -->
-     <footer class="footer-dark">
-    <div class="footer-container">
+    <hr>
+    <footer class="footer-dark">
+        <div class="footer-container">
 
-        <div class="footer-head">
-            <div class="footer-logo">
-                <img src="imagens/logo.png" alt="">
+            <div class="footer-head">
+                <div class="footer-logo">
+                    <img src="imagens/logo.png" alt="">
+                </div>
+
+                <div class="footer-columns">
+                    <ul>
+                        <li>Veículos</li>
+                        <li>Perguntas frequentes</li>
+                        <li>Sobre a pré vendas</li>
+                    </ul>
+
+                    <ul>
+                        <li>Serviços</li>
+                        <li>Financiamento</li>
+                    </ul>
+
+                    <ul>
+                        <li>Garantia</li>
+                        <li>Revisões</li>
+                        <li>Peças</li>
+                    </ul>
+
+                    <ul>
+                        <li>Acessórios</li>
+                        <li>Entrega</li>
+                        <li>Contato</li>
+                        <li>Agendamento</li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="footer-columns">
-                <ul>
-                    <li>Veículos</li>
-                    <li>Perguntas frequentes</li>
-                    <li>Sobre a pré vendas</li>
-                </ul>
+            <hr>
 
-                <ul>
-                    <li>Serviços</li>
-                    <li>Financiamento</li>
-                </ul>
+            <div class="footer-bottom">
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#">•••</a>
+                </div>
 
-                <ul>
-                    <li>Garantia</li>
-                    <li>Revisões</li>
-                    <li>Peças</li>
-                </ul>
-
-                <ul>
-                    <li>Acessórios</li>
-                    <li>Entrega</li>
-                    <li>Contato</li>
-                    <li>Agendamento</li>
-                </ul>
+                <p class="copy">©CopyCars | Todos os direitos reservados.</p>
             </div>
+
         </div>
-
-        <hr>
-
-        <div class="footer-bottom">
-            <div class="social-icons">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                <a href="#">•••</a>
-            </div>
-
-            <p class="copy">©CopyCars | Todos os direitos reservados.</p>
-        </div>
-
-    </div>
-</footer>
+    </footer>
 
 </body>
 
