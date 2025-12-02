@@ -1,0 +1,111 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
+
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url('imagens/pexels-maltelu-1397751.jpg') no-repeat center/cover;
+        position: relative;
+    }
+
+    .login-container {
+        width: 350px;
+        padding: 35px 30px;
+        background: rgba(255, 255, 255, 0.12);
+        backdrop-filter: blur(10px);
+        border-radius: 18px;
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+        text-align: center;
+    }
+
+    .login-container h2 {
+        color: #fff;
+        margin-bottom: 25px;
+        font-size: 1.7rem;
+        font-weight: 600;
+    }
+
+    .input-group {
+        text-align: left;
+        margin-bottom: 18px;
+    }
+
+    .input-group label {
+        color: #fff;
+        font-size: 0.9rem;
+    }
+
+    .input-group input {
+        width: 100%;
+        padding: 12px;
+        margin-top: 6px;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        background: rgba(255, 255, 255, 0.2);
+        color: #fff;
+        font-size: 0.95rem;
+    }
+
+    .input-group input::placeholder {
+        color: #eaeaea;
+    }
+
+    .options {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 12px 0 20px;
+        color: #fff;
+        font-size: 0.85rem;
+    }
+
+    .options a {
+        color: #fff;
+        text-decoration: none;
+        opacity: 0.9;
+    }
+
+    .options a:hover {
+        opacity: 1;
+        text-decoration: underline;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        background: #ffffff;
+        border: none;
+        border-radius: 10px;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    button:hover {
+        background: #f0f0f0;
+    }
+
+    .register {
+        margin-top: 18px;
+        color: #fff;
+        font-size: 0.85rem;
+    }
+
+    .register a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .register a:hover {
+        text-decoration: underline;
+    }
