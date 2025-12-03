@@ -25,8 +25,7 @@
         height: 100%;
         object-fit: cover;
         /* mantém proporção e cobre toda a tela */
-        z-index: -1;
-        /* fica atrás do conteúdo */
+        z-index: -1;  /* fica atrás do conteúdo */
     }
 
     /* Conteúdo por cima */
@@ -38,7 +37,6 @@
         margin-top: 40vh;
         font-size: 2rem;
     }
-
 
     .login-container {
         width: 350px;

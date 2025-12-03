@@ -17,7 +17,7 @@ html {
     height: 50vh;
 }
 
-/* Vídeo ocupando a tela inteira */
+
 #bg-video {
     position: fixed;
     top: 0;
@@ -37,7 +37,6 @@ html {
     margin-top: 40vh;
     font-size: 2rem;
 }
-
 
 /* ======== CARD COM EFEITO VIDRO ======== */
 .container {
