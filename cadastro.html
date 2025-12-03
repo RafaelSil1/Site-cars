@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,32 +8,43 @@
     <title>Cadastro</title>
     <link rel="stylesheet" href="cadastro.css">
 </head>
+
 <body>
 
-    <div class="container">
-        <h2>Cadastro</h2>
 
-        <form action="salvar_cadastro.php" method="POST">
+    <video autoplay muted loop id="bg-video">
+        <source src="video/banner-login.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos em HTML5.
+    </video>
 
-            <label>Nome</label>
-            <input type="text" name="nome" placeholder="Digite seu nome" required>
+    <div class="conteudo">
 
-            <label>Email</label>
-            <input type="email" name="email" placeholder="Digite seu email" required>
+        <div class="container">
+            <h2>Cadastro</h2>
 
-            <label>Senha</label>
-            <input type="password" name="senha" placeholder="Crie sua senha" required>
+            <form action="salvar_cadastro.php" method="POST">
 
-            <label>Confirmar senha</label>
-            <input type="password" name="senha" placeholder="Repita sua senha" required>
+                <label>Nome</label>
+                <input type="text" name="nome" placeholder="Digite seu nome" required>
 
-            <button type="submit">Registrar</button>
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Digite seu email" required>
 
-            <p class="login-link">
-                Já tem conta? <a href="login.html">Fazer login</a>
-            </p>
-        </form>
+                <label>Senha</label>
+                <input type="password" name="senha" placeholder="Crie sua senha" required>
+
+                <label>Confirmar senha</label>
+                <input type="password" name="senha" placeholder="Repita sua senha" required>
+
+                <button type="submit">Registrar</button>
+
+                <p class="login-link">
+                    Já tem conta? <a href="login.html">Fazer login</a>
+                </p>
+            </form>
+        </div>
+
     </div>
-
 </body>
+
 </html>

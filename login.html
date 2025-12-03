@@ -1,46 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon">
-<link rel="stylesheet" href="login.css">
-<title>Página de Login</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="login.css">
+    <title>Página de Login</title>
 </head>
+
 <body>
 
-    <div class="login-container">
+    <video autoplay muted loop id="bg-video">
 
-        <h2>Login</h2>
+        <source src="video/banner-login.mp4" type="video/mp4">
 
-        <form action="login.php" method="POST"> 
+        Seu navegador não suporta vídeos em HTML5.
+    </video>
 
-            <div class="input-group">
-                <label>Email</label>
-                <input type="email" name="email" placeholder="Digite seu email" required>
-            </div>
 
-            <div class="input-group">
-                <label>Senha</label>
-                <input type="password" name="senha" placeholder="Digite sua senha" required>
-            </div>
+    <div class="conteudo">
 
-            <div class="options">
-                <label>
-                    <input type="checkbox"> Lembrar-me
-                </label>
-                <a href="#">Esqueceu a senha?</a>
-            </div>
+        <div class="login-container">
 
-            <button type="submit">Login</button>
+            <h2>Login</h2>
 
-            <p class="register">
-                Não tem conta? <a href="cadastro.html">Registrar</a>
-            </p>
+            <form action="login.php" method="POST">
 
-        </form>
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="Digite seu email" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Senha</label>
+                    <input type="password" name="senha" placeholder="Digite sua senha" required>
+                </div>
+
+                <div class="options">
+                    <label>
+                        <input type="checkbox"> Lembrar-me
+                    </label>
+                    <a href="#">Esqueceu a senha?</a>
+                </div>
+
+                <button type="submit">Login</button>
+
+                <p class="register">
+                    Não tem conta? <a href="cadastro.html">Registrar</a>
+                </p>
+
+            </form>
+
+        </div>
 
     </div>
 
 </body>
+
 </html>

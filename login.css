@@ -5,14 +5,40 @@
         font-family: "Poppins", sans-serif;
     }
 
-    body {
-        height: 100vh;
+    /* Remove margens padrão */
+    body,
+    html {
         display: flex;
         justify-content: center;
         align-items: center;
-        background: url("imagens/background.jpg") no-repeat center/cover;
-        position: relative;
+        margin: 0;
+        padding: 0;
+        height: 50vh;
     }
+
+    /* Vídeo ocupando a tela inteira */
+    #bg-video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* mantém proporção e cobre toda a tela */
+        z-index: -1;
+        /* fica atrás do conteúdo */
+    }
+
+    /* Conteúdo por cima */
+    .conteudo {
+        position: relative;
+        z-index: 1;
+        color: white;
+        text-align: center;
+        margin-top: 40vh;
+        font-size: 2rem;
+    }
+
 
     .login-container {
         width: 350px;
