@@ -11,7 +11,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url("imagens/pexels-maltelu-1397751.jpg") no-repeat center/cover;
+    background: url("imagens/background.jpg") no-repeat center/cover;
 }
 
 /* ======== CARD COM EFEITO VIDRO ======== */

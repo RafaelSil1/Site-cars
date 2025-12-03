@@ -10,17 +10,19 @@
 <body>
 
     <div class="login-container">
+
         <h2>Login</h2>
 
-        <form>
+        <form action="login.php" method="POST"> 
+
             <div class="input-group">
                 <label>Email</label>
-                <input type="email" placeholder="Digite seu email" required>
+                <input type="email" name="email" placeholder="Digite seu email" required>
             </div>
 
             <div class="input-group">
                 <label>Senha</label>
-                <input type="password" placeholder="Digite sua senha" required>
+                <input type="password" name="senha" placeholder="Digite sua senha" required>
             </div>
 
             <div class="options">
@@ -35,7 +37,9 @@
             <p class="register">
                 Não tem conta? <a href="cadastro.html">Registrar</a>
             </p>
+
         </form>
+
     </div>
 
 </body>
