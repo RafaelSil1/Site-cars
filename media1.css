@@ -1,18 +1,17 @@
-
 @media (max-width: 428px) {
 
 
     header {
-        justify-content: space-between;
-        padding: 1rem;
+        margin-left: 350px;
+        gap: 270px;
+        padding: 1rem 0rem;
     }
 
     .menu-btn {
         display: flex;
         /*tornando o menuHamburger Visível*/
-        margin-right: -20rem;
-        /*posicionamento do menu*/
         justify-content: center;
+        /*posicionamento do menu*/
     }
 
     /* MENU VERTICAL */
@@ -38,6 +37,7 @@
         text-align: center;
         border-top: 1px solid black;
         border-bottom: 1px solid black;
+        z-index: 999;
     }
 
     .dark .nav-menu {
@@ -58,10 +58,13 @@
         padding: 1rem;
     }
 
+    .img-header {
+        width: 0;
+    }
 
     .img-header img {
-        height: 4rem;
-        width: 50%;
+        height: auto;
+        width: 60px;
     }
 
     .navegador ul {
@@ -76,37 +79,34 @@
         transform: none;
     }
 
-    .img-banner img {
-        margin-left: 0px;
-        width: 100%;
-        height: 25rem;
-    }
-
     .menu-desktop {
         display: none;
     }
 
     .btn button {
         position: fixed;
-        bottom: 0;
-        right: 0;
+        bottom: 15px;
+        right: 10px;
         z-index: 999;
     }
 
-    .btn img {
+    .card-us {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0px;
         margin-left: 0px;
+        width: 100%;
     }
 
     .title-one {
-        padding: 0px;
+        display: flex;
+        justify-content: center;
         margin-left: 0px;
-        width: 90%;
     }
 
     .title-one h2 {
-        margin-top: 50px;
-        margin-bottom: 40px;
-        margin-left: 95px;
+        margin-left: 0px;
         font-size: 1.5rem;
     }
 
@@ -133,12 +133,20 @@
         flex-direction: column;
     }
 
+
+    .card-md {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
     .title-two {
+        display: flex;
+        justify-content: center;
         padding: 0px;
         margin-top: 50px;
         margin-bottom: 40px;
-        margin-left: 95px;
-        width: 90%;
+        margin-left: 0px;
     }
 
     .tx {
@@ -239,7 +247,7 @@
         gap: 10px;
         padding: 1rem 0;
     }
-    
+
     .navegador ul {
         gap: 5px;
     }
