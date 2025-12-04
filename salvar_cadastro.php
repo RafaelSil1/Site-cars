@@ -1,36 +1,32 @@
-<?php 
-// recebe aqui os dados enviados pelo formulário 
-//variaveis são criados com o " $ " + nome da variavel
- $nome = $_POST['nome'];
- $email = $_POST['email'];
+<?php
+// Recebe os dados enviados pelo formulário de cadastro
+$nome  = $_POST['nome'];
+$email = $_POST['email'];
 
-//CRIPTOGRAFIA DA SENHA ANTES DE SALVAR NO BANCO (por segurança)
+// Criptografa a senha antes de salvar no banco (por segurança)
 $senha = password_hash($_POST['senha'], PASSWORD_DEFAULT);
 
-// conecta ao banco de dados (servidor, usuario senha, nome, do banco)
-$con = new mysql("localshot", "root", "", "cadastro");
+// Conecta ao banco de dados (servidor, usuário, senha, nome do banco)
+$con = new mysqli("localhost", "root", "", "escola");
 
-// verificar se houve erro na conexão 
+// Verifica se houve erro na conexão
 if ($con->connect_error) {
-    die("Erro: " . $con->connect_error);
+    die("Erro: " . $con->connect_error); 
+    // Encerra o código e mostra o erro
 }
 
-// monta a instrução SQL para inserir o novo usuário no banco
+// Monta a instrução SQL para inserir o novo usuário no banco
 $sql = "INSERT INTO usuarios (nome, email, senha) VALUES ('$nome', '$email', '$senha')";
 
-// tenta executar o comando SQL 
+// Tenta executar o comando SQL
 if ($con->query($sql) === TRUE) {
-
-    // se der certo, mostra mensagem de sucesso 
+    // Se der certo, mostra mensagem de sucesso
     echo "<h2>Cadastro realizado com sucesso!</h2>";
-    echo "<a href='login.html'>Ir para o login</a>";
-
+    echo "<a href='login.html'>Ir para o Login</a>";
 } else {
-
-    // caso dê erro, mostra o motivo 
-    echo "Erro ao cadastrar " . $con->error;
+    // Caso dê erro, mostra o motivo
+    echo "Erro ao cadastrar: " . $con->error;
 }
-
-// Encerra a conexão com o banco 
+// Encerra a conexão com o banco
 $con->close();
- ?>
+?>

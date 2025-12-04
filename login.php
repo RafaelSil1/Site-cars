@@ -1,51 +1,51 @@
 <?php
+session_start(); 
+// Inicia a sessão para que possamos guardar os dados do usuário logado
 
-// inicia a sessão para que possamos quardar os dados do usuario logado 
-session_start();
+$email = $_POST['email']; 
+// Recebe o e-mail digitado no formulário de login
 
-// recebe o email digitado no formulário de login 
-$email = $_POST['email'];
+$senha = $_POST['senha']; 
+// Recebe a senha digitada no formulário
 
-// recebe a senha digitada no formulário 
-$senha = $_POST['senha'];
+// Conexão com o banco de dados (servidor, usuário, senha, nome do banco)
+$con = new mysqli("localhost", "root", "", "escola");
 
-// conexão com o banco de dados ( servidor, usuário, senha, nome do banco )
-$con = new mysql("localhost", "root", "", "cadastro" );
-
-// verificar se ocorreu erro ao tentar conectar 
-if ($con->connect_error); {
-// Encerra o programa e mostra o erro
+// Verifica se ocorreu erro ao tentar conectar
+if ($con->connect_error) {
+    die("Erro: " . $con->connect_error); 
+    // Encerra o programa e mostra o erro
 }
 
-//  SQL para buscar o usuário pelo e-mail informado
-$sql = "SELECT * FROM usuarios WHERE email = '$eamil'";
-$result = $con->query($sql);
-// Executa a consulta no banco 
+// SQL para buscar o usuário pelo e-mail informado
+$sql = "SELECT * FROM usuarios WHERE email = '$email'";
+$result = $con->query($sql); 
+// Executa a consulta no banco
 
-// verifica se o email existe na tabela 
+// Verifica se o e-mail existe na tabela
 if ($result->num_rows > 0) {
-    $usuario = $result->fetch_assoc();
-    // pega os dados do usuário encontrado
+    $usuario = $result->fetch_assoc(); 
+    // Pega os dados do usuário encontrado
 
-    // verificar se a senha digitada confere com a senha  criptografada do banco
+    // Verifica se a senha digitada confere com a senha criptografada do banco
     if (password_verify($senha, $usuario['senha'])) {
 
-        $_SESSION['usuario'] = $usuario['nome'];
-        // guarda o nome do usuario na sessão ( para manter o login ativo )
+        $_SESSION['usuario'] = $usuario['nome']; 
+        // Guarda o nome do usuário na sessão (para manter o login ativo)
 
-        header("location: inicio.php");
-        // redireciona para a pagina protegida
-        exit;
-        // encerra o script após o redirecionamento
+        header("Location: inicio.php"); 
+        // Redireciona para a página protegida
+        exit; 
+        // Encerra o script após o redirecionamento
     } else {
-        echo "Senha incorreta!";
-        //s senha não bate
+        echo "Senha incorreta!"; 
+        // Senha não bate
     }
 } else {
-    echo "E-mail não encontrado!";
-    // nenhum usuário com esse e-mail foi localizado no banco
+    echo "E-mail não encontrado!"; 
+    // Nenhum usuário com esse e-mail foi localizado no banco
 }
 
-$con->close();
-// fecha a conexão com o banco 
+$con->close(); 
+// Fecha a conexão com o banco
 ?>
